@@ -1,0 +1,257 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5dc; /* Light beige background */
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation Bar */
+.navigation {
+  background: #dc2626; /* Red */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+.nav-link.active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.nav-right .nav-link {
+  margin-left: 2rem;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2d3748; /* Dark grey */
+  margin-bottom: 2rem;
+}
+
+/* Home Page Styles */
+.home-page {
+  width: 100%;
+}
+
+/* Upload Section */
+.upload-section {
+  border: 2px dashed #dc2626; /* Red dashed border */
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  background: white;
+}
+
+.upload-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d3748; /* Dark grey */
+  margin: 0 0 0.5rem 0;
+}
+
+.upload-description {
+  color: #2d3748; /* Dark grey */
+  margin: 0 0 1.5rem 0;
+  font-size: 1rem;
+}
+
+.upload-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Severity Section */
+.severity-section {
+  margin-bottom: 2rem;
+}
+
+.severity-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d3748; /* Dark grey */
+  margin: 0 0 1rem 0;
+}
+
+.severity-options {
+  display: flex;
+  gap: 1rem;
+}
+
+.severity-option {
+  background: white;
+  border: 1px solid #2d3748; /* Dark grey border */
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  color: #2d3748; /* Dark grey text */
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.severity-option:hover {
+  background: #f7fafc;
+}
+
+.severity-option:active {
+  background: #edf2f7;
+}
+
+/* Report Button Container */
+.report-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+/* Registration Page Styles */
+.registration-page {
+  width: 100%;
+}
+
+.registration-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2d3748; /* Dark grey */
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fef5e7; /* Light pinkish-beige */
+  color: #2d3748;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+.form-group input::placeholder {
+  color: #a0aec0;
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.btn-red {
+  background: #dc2626; /* Red */
+  color: white;
+}
+
+.btn-red:hover {
+  background: #b91c1c;
+}
+
+.btn-upload {
+  background: #fbb6ce; /* Light pink */
+  color: #2d3748; /* Dark grey text */
+  border: none;
+}
+
+.btn-upload:hover {
+  background: #f687b3;
+}
+
+/* Register Button */
+.register-btn {
+  width: 100%;
+  background: #dc2626; /* Red */
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 1rem;
+}
+
+.register-btn:hover {
+  background: #b91c1c;
+}
+
+.register-btn:active {
+  transform: translateY(1px);
+}
+
+/* Footer */
+.footer {
+  background: #2d3748; /* Dark grey */
+  height: 60px;
+  margin-top: auto;
+}
